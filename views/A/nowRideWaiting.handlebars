@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>WeHaul Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/customizations.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <h3 id="text">Finding Driver</h3>
+        <div class="spinner" style="display: inline-block;"></div>
+        <h3 id="text">Please Wait</h3>
+        <p id="text"><span id="time">30</span> second(s) before giving up...</p>
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <div class="col-lg-4">
+                <a class="btn btn-lg btn-default btn-block" id="cancel">Cancel Request</a>
+            </div>
+            <div class="col-xs-4"></div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/wait.js"></script>
+    <script>
+        if(localStorage.getItem("currentUser") == null) {
+            window.location.href = "/"
+        }
+    </script>
+</body>
+</html>
